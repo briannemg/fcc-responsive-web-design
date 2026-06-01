@@ -52,17 +52,17 @@ tr[class="in-progress"] {
   background-image: linear-gradient(#faf5ea, #f6efdf);
 }
 
-tr[class="read"] .status {
+tr[class="read"] span[class="status"] {
   border: 1px solid #8fcf96;
   background-image: linear-gradient(#dff4e1, #cdeccf);
 }
 
-tr[class="to-read"] .status {
+tr[class="to-read"] span[class="status"] {
   border: 1px solid #d8b8c8;
   background-image: linear-gradient(#f7eaf0, #f2dde7);
 }
 
-tr[class="in-progress"] .status {
+tr[class="in-progress"] span[class="status"] {
   border: 1px solid #d8c18a;
   background-image: linear-gradient(#faf1d8, #f7e8be);
 }
@@ -85,17 +85,17 @@ span[class^="rate"] > span {
 }
 
 /* One star */
-span[class*="one"] > span:first-child {
+span[class~="one"] > span:first-of-type {
   background-image: linear-gradient(#f7d7e0, #efbfd0);
 }
 
 /* Two stars */
-span[class*="two"] > span:nth-child(1),
-span[class*="two"] > span:nth-child(2) {
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
   background-image: linear-gradient(#cfe7f4, #b7d9ec);
 }
 
 /* Three stars */
-span[class*="three"] span {
+span[class~="three"] span {
   background-image: linear-gradient(#d8f0da, #bfe6c3);
 }
