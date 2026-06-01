@@ -1,0 +1,101 @@
+body {
+  background-color: #f8f7f5;
+  font-family: Arial, sans-serif;
+  color: #4a4a4a;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #6d7d6b;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+th {
+  padding: 16px;
+  text-align: center;
+}
+
+td {
+  padding: 16px;
+  text-align: center;
+}
+
+tbody tr:hover {
+  transform: scale(1.01);
+}
+
+/* Required for freeCodeCamp certification */
+span {
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#edf8ee, #e4f5e5);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#f7f2f5, #f3ecef);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#faf5ea, #f6efdf);
+}
+
+tr[class="read"] .status {
+  border: 1px solid #8fcf96;
+  background-image: linear-gradient(#dff4e1, #cdeccf);
+}
+
+tr[class="to-read"] .status {
+  border: 1px solid #d8b8c8;
+  background-image: linear-gradient(#f7eaf0, #f2dde7);
+}
+
+tr[class="in-progress"] .status {
+  border: 1px solid #d8c18a;
+  background-image: linear-gradient(#faf1d8, #f7e8be);
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 28px;
+  width: 110px;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  margin: 3px;
+  height: 18px;
+  width: 18px;
+  background-color: #ececec;
+}
+
+/* One star */
+span[class*="one"] > span:first-child {
+  background-image: linear-gradient(#f7d7e0, #efbfd0);
+}
+
+/* Two stars */
+span[class*="two"] > span:nth-child(1),
+span[class*="two"] > span:nth-child(2) {
+  background-image: linear-gradient(#cfe7f4, #b7d9ec);
+}
+
+/* Three stars */
+span[class*="three"] span {
+  background-image: linear-gradient(#d8f0da, #bfe6c3);
+}
